@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 1182359331}
   - component: {fileID: 1182359330}
   - component: {fileID: 1182359333}
+  - component: {fileID: 1182359334}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -330,12 +331,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1694159778, guid: 46ef5c7dfa1336d409751edb67df4074, type: 3}
+  m_Sprite: {fileID: -61225040, guid: 46ef5c7dfa1336d409751edb67df4074, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.23, y: 1.03}
+  m_Size: {x: 1.26, y: 1.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -378,7 +379,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.23, y: 1.03}
-    newSize: {x: 1.23, y: 1.03}
+    newSize: {x: 1.26, y: 1.06}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -405,6 +406,7 @@ PolygonCollider2D:
       - {x: -0.43819457, y: 0.22219923}
       - {x: -0.5520408, y: 0.08456978}
       - {x: -0.61780095, y: 0.08379641}
+      - {x: -0.6213066, y: 0.006452009}
       - {x: -0.6234026, y: -0.03979209}
       - {x: -0.5393214, y: -0.10096893}
       - {x: -0.275, y: -0.385}
@@ -420,6 +422,27 @@ PolygonCollider2D:
       - {x: 0.49872637, y: -0.1861845}
       - {x: 0.5878007, y: -0.20777893}
   m_UseDelaunayMesh: 0
+--- !u!95 &1182359334
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182359328}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 092bb7b45a82eae4ca412995ca46fa55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
