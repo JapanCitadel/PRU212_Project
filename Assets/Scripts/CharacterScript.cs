@@ -19,7 +19,6 @@ public class CharacterScript : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         rigit = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        animator.SetBool("IsTurn", false);
     }
 
     // Update is called once per frame
@@ -37,7 +36,6 @@ public class CharacterScript : MonoBehaviour
         {
             sprite.flipX = true;
             EatPoint.transform.position = new Vector3(transform.position.x + 0.615f, transform.position.y, 0f);
-
         }
         else if ((NowDistance > PrevDistance && worldPosition.x < 0) || (NowDistance < PrevDistance && worldPosition.x > 0))
         {
