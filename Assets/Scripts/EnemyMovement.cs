@@ -18,10 +18,13 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         float halfScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
-        startPosition = -halfScreenWidth;
-        endPosition = halfScreenWidth;
+        startPosition = -halfScreenWidth -2;
+        endPosition = halfScreenWidth +2;
         Screenwidth = halfScreenWidth;
         ScreenHeight = Camera.main.orthographicSize;
+
+        // Set initial direction
+        FlipCharacter();
     }
 
     void Update()
@@ -40,13 +43,12 @@ public class EnemyMovement : MonoBehaviour
     {
         if (transform.position.x > endPosition || transform.position.x < startPosition)
         {
-            xDirection *= -1;
-            FlipCharacter();
+            Destroy(gameObject);
         }
 
         if (transform.position.y > ScreenHeight || transform.position.y < -ScreenHeight)
         {
-            yDirection *= -1;
+            Destroy(gameObject);
         }
     }
 
@@ -81,5 +83,4 @@ public class EnemyMovement : MonoBehaviour
         xSpeed = x;
         ySpeed = y;
     }
-
 }
