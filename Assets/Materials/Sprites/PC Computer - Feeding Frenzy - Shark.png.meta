@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5c08644f76aef634fa5ec8d851063a4b
+=======
+guid: 11eac1fac43ff8b42a050687adf73140
+>>>>>>> f129210a49c12b3facf67f6909d2e3041fd6c74d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -249,6 +253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: PC Computer - Feeding Frenzy - Shark_6
       rect:
         serializedVersion: 2
@@ -417,6 +422,8 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+=======
+>>>>>>> f129210a49c12b3facf67f6909d2e3041fd6c74d
       name: PC Computer - Feeding Frenzy - Shark_14
       rect:
         serializedVersion: 2
@@ -815,6 +822,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+<<<<<<< HEAD
     - serializedVersion: 2
       name: PC Computer - Feeding Frenzy - Shark_33
       rect:
@@ -1004,6 +1012,8 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+>>>>>>> f129210a49c12b3facf67f6909d2e3041fd6c74d
     outline: []
     physicsShape: []
     bones: []
