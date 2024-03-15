@@ -12,15 +12,9 @@ GameObject:
   - component: {fileID: 2490285044886706672}
   - component: {fileID: -4791129584056521311}
   - component: {fileID: -158803702750215500}
-<<<<<<< HEAD
-  m_Layer: 0
-  m_Name: enemy2
-  m_TagString: Untagged
-=======
   m_Layer: 6
   m_Name: enemy2
   m_TagString: Enemy2
->>>>>>> f129210a49c12b3facf67f6909d2e3041fd6c74d
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
