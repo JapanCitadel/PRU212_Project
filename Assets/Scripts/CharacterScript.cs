@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterScript : MonoBehaviour
 {
@@ -87,7 +88,18 @@ public class CharacterScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bomb"))
         {
-            //animator.SetTrigger("IsEat");
+            this.gameObject.SetActive(false);
+            Scene currentScene = SceneManager.GetActiveScene();
+            //UIControllerScript uiController = GameObject.FindObjectOfType<UIControllerScript>();
+            //if (uiController != null)
+            //{
+            //    PlayerPrefs.SetInt("EnemyCount", uiController.EnemyCount);
+            //}
+            //SceneManager.LoadScene("EndgameScene");
+        }
+        if (collision.gameObject.CompareTag("Fish"))
+        {
+            this.gameObject.SetActive(false);
         }
     }
 }
