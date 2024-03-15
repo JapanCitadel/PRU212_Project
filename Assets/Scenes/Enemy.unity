@@ -152,7 +152,7 @@ Animator:
   m_GameObject: {fileID: 318873825}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f1a9e1a1bee320448f5c1121666255a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6862695b24586164eb32d374bd2d4f26, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -204,7 +204,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -603151539, guid: b82436c3621f3f14393e537091fe116d, type: 3}
+  m_Sprite: {fileID: -603151539, guid: adbfaf5fb09f9654eac7bb651c32dd0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -798,7 +798,7 @@ PrefabInstance:
     - target: {fileID: 8111250132362553849, guid: 91505cbf224d0a04a86362fbd40545f2, type: 3}
       propertyPath: boomPrefab
       value: 
-      objectReference: {fileID: 2089270799547380143, guid: 91505cbf224d0a04a86362fbd40545f2, type: 3}
+      objectReference: {fileID: 3554965726528649171, guid: 91505cbf224d0a04a86362fbd40545f2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

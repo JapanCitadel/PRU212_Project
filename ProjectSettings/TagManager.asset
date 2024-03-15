@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Bomb
   - Item
+  - Enemy2
+  - Enemy3
+  - Enemy4
   layers:
   - Default
   - TransparentFX
