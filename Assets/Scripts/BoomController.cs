@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class BoomController : MonoBehaviour
 {
-<<<<<<< HEAD
-    public float fallSpeed = 5f; 
-=======
-    public float fallSpeed = 3f; 
->>>>>>> f129210a49c12b3facf67f6909d2e3041fd6c74d
+    public float fallSpeed = 3f;
     public float destroyHeight = -5f; 
 
     void Update()
