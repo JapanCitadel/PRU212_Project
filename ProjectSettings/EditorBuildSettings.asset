@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharacterDesignScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Easy Scenes.unity
+    guid: a490b90ecba9f864b96bd8a698161866
+  - enabled: 1
+    path: Assets/Scenes/First Scenes.unity
+    guid: 5147e98d440dcdc4294885af639b64a2
+  - enabled: 1
+    path: Assets/Scenes/Scenes game modes.unity
+    guid: ab0d668f755d1094595e0b98330d0f2f
+  - enabled: 1
+    path: Assets/Scenes/Hard Scenes.unity
+    guid: 02002482f21f9c14fb852d919704ff99
+  - enabled: 1
+    path: Assets/Scenes/WinGame.unity
+    guid: 67085cd7d8a0c9643ba9af5827724163
   m_configObjects: {}
