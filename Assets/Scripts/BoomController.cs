@@ -5,7 +5,13 @@ using UnityEngine;
 public class BoomController : MonoBehaviour
 {
     public float fallSpeed = 3f; 
-    public float destroyHeight = -5f; 
+    public float destroyHeight = -5f;
+    Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -13,7 +19,20 @@ public class BoomController : MonoBehaviour
 
         if (transform.position.y < destroyHeight)
         {
-            Destroy(gameObject);
+            DestroyBoom();
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            animator.SetTrigger("Explode");
+            DestroyBoom();
+        }
+    }
+
+    public void DestroyBoom()
+    {
+        gameObject.SetActive(false);
     }
 }
