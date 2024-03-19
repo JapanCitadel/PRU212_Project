@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class BoomSpawner : MonoBehaviour
 {
@@ -27,4 +28,6 @@ public class BoomSpawner : MonoBehaviour
         GameObject newBoom = Instantiate(boomPrefab, spawnPosition, Quaternion.identity);
         newBoom.AddComponent<BoomController>(); 
     }
+
+    
 }

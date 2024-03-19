@@ -69,6 +69,7 @@ public class CharacterScript : MonoBehaviour
         foreach (Collider2D enemy in eatEnemies)
         {
             animator.SetTrigger("IsEat");
+            enemy.gameObject.SetActive(false);
             GrowUp(eatenFish);
         }
         foreach (Collider2D item in eatItems)
@@ -100,17 +101,32 @@ public class CharacterScript : MonoBehaviour
             //}
             //SceneManager.LoadScene("EndgameScene");
         }
-        if (collision.gameObject.CompareTag("Fish2") && size < 2f)
+
+        if (collision.gameObject.CompareTag("Enemy2") && size < 2f)
         {
             this.gameObject.SetActive(false);
         }
-        else if(collision.gameObject.CompareTag("Fish3") && size < 3f)
+        else
+        {
+            Eat();
+        }
+
+        if(collision.gameObject.CompareTag("Enemy3") && size < 3f)
         {
             this.gameObject.SetActive(false);
         }
-        else if (collision.gameObject.CompareTag("Fish4") && size < 4f)
+        else
+        {
+            Eat();
+        }
+
+        if (collision.gameObject.CompareTag("Enemy4") && size < 4f)
         {
             this.gameObject.SetActive(false);
+        }
+        else
+        {
+            Eat();
         }
     }
 
