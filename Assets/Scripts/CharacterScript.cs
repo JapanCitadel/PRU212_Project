@@ -13,6 +13,8 @@ public class CharacterScript : MonoBehaviour
     public LayerMask EnemyLayer, ItemLayer;
     float PrevPosition;
     float NowDistance, PrevDistance;
+    float size = 1f;
+    int eatenFish = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -67,6 +69,8 @@ public class CharacterScript : MonoBehaviour
         foreach (Collider2D enemy in eatEnemies)
         {
             animator.SetTrigger("IsEat");
+            enemy.gameObject.SetActive(false);
+            GrowUp(eatenFish);
         }
         foreach (Collider2D item in eatItems)
         {
@@ -97,9 +101,43 @@ public class CharacterScript : MonoBehaviour
             //}
             //SceneManager.LoadScene("EndgameScene");
         }
-        if (collision.gameObject.CompareTag("Fish"))
+
+        if (collision.gameObject.CompareTag("Enemy2") && size < 2f)
         {
             this.gameObject.SetActive(false);
         }
+        else
+        {
+            Eat();
+        }
+
+        if(collision.gameObject.CompareTag("Enemy3") && size < 3f)
+        {
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            Eat();
+        }
+
+        if (collision.gameObject.CompareTag("Enemy4") && size < 4f)
+        {
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            Eat();
+        }
     }
+
+    public void GrowUp(int eatenFish)
+    {
+        eatenFish++;
+        if (eatenFish >= 10)
+        {
+            size++;
+            transform.localScale = new Vector3(size, size, 1f);
+            eatenFish = 0;
+        }
+    } 
 }
