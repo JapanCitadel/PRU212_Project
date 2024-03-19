@@ -126,12 +126,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_0
       rect:
         serializedVersion: 2
-        x: 151
-        y: 399
-        width: 68
-        height: 68
+        x: 152
+        y: 401
+        width: 66
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_2
       rect:
         serializedVersion: 2
-        x: 151
-        y: 256
-        width: 162
-        height: 141
+        x: 153
+        y: 257
+        width: 158
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_3
       rect:
         serializedVersion: 2
-        x: 152
-        y: 136
-        width: 122
-        height: 117
+        x: 158
+        y: 139
+        width: 113
+        height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_1
       rect:
         serializedVersion: 2
-        x: 316
-        y: 256
-        width: 161
-        height: 141
+        x: 318
+        y: 258
+        width: 156
+        height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_5
       rect:
         serializedVersion: 2
-        x: 480
-        y: 256
-        width: 160
-        height: 141
+        x: 483
+        y: 258
+        width: 155
+        height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_6
       rect:
         serializedVersion: 2
-        x: 644
-        y: 256
-        width: 161
-        height: 141
+        x: 651
+        y: 259
+        width: 150
+        height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_7
       rect:
         serializedVersion: 2
-        x: 809
-        y: 256
-        width: 160
-        height: 141
+        x: 816
+        y: 260
+        width: 149
+        height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,12 +273,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_8
       rect:
         serializedVersion: 2
-        x: 277
-        y: 175
-        width: 83
-        height: 78
+        x: 282
+        y: 178
+        width: 75
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: PC Computer - Feeding Frenzy - Mine_9
       rect:
         serializedVersion: 2
-        x: 151
-        y: 2
-        width: 131
-        height: 131
+        x: 158
+        y: 10
+        width: 120
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
