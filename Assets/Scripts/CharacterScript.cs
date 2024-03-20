@@ -27,28 +27,31 @@ public class CharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
-
-        worldPosition.z = 0f;
-        PrevPosition = transform.position.x;
-        NowDistance = Mathf.Abs(worldPosition.x - 0);
-        PrevDistance = Mathf.Abs(PrevPosition - 0);
-
-        if ((NowDistance < PrevDistance && worldPosition.x < 0) || (NowDistance > PrevDistance && worldPosition.x > 0))
+        if (!UIControllerScript.isPause)
         {
-            sprite.flipX = true;
-            EatPoint.transform.position = new Vector3(transform.position.x + 0.615f, transform.position.y, 0f);
-        }
-        else if ((NowDistance > PrevDistance && worldPosition.x < 0) || (NowDistance < PrevDistance && worldPosition.x > 0))
-        {
-            sprite.flipX = false;
-            EatPoint.transform.position = new Vector3(transform.position.x - 0.615f, transform.position.y, 0f);
-        }
+            Vector3 mousePos = Input.mousePosition;
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
 
-        transform.position = worldPosition;
-        Swimming();
-        Eat();
+            worldPosition.z = 0f;
+            PrevPosition = transform.position.x;
+            NowDistance = Mathf.Abs(worldPosition.x - 0);
+            PrevDistance = Mathf.Abs(PrevPosition - 0);
+
+            if ((NowDistance < PrevDistance && worldPosition.x < 0) || (NowDistance > PrevDistance && worldPosition.x > 0))
+            {
+                sprite.flipX = true;
+                EatPoint.transform.position = new Vector3(transform.position.x + 0.615f, transform.position.y, 0f);
+            }
+            else if ((NowDistance > PrevDistance && worldPosition.x < 0) || (NowDistance < PrevDistance && worldPosition.x > 0))
+            {
+                sprite.flipX = false;
+                EatPoint.transform.position = new Vector3(transform.position.x - 0.615f, transform.position.y, 0f);
+            }
+
+            transform.position = worldPosition;
+            Swimming();
+            Eat();
+        }
     }
 
     private void Swimming()
@@ -94,12 +97,12 @@ public class CharacterScript : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             Scene currentScene = SceneManager.GetActiveScene();
-            //UIControllerScript uiController = GameObject.FindObjectOfType<UIControllerScript>();
-            //if (uiController != null)
-            //{
-            //    PlayerPrefs.SetInt("EnemyCount", uiController.EnemyCount);
-            //}
-            //SceneManager.LoadScene("EndgameScene");
+            UIControllerScript uiController = GameObject.FindObjectOfType<UIControllerScript>();
+            if (uiController != null)
+            {
+                //PlayerPrefs.SetInt("EnemyCount", uiController.EnemyCount);
+            }
+            SceneManager.LoadScene("EndgameScene");
         }
 
         if (collision.gameObject.CompareTag("Enemy2") && size < 2f)

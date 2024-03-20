@@ -19,6 +19,6 @@ public class MainScript : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(3);
+        SceneManager.LoadSceneAsync(2);
     }
 }
