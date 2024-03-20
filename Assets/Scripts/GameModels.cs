@@ -17,12 +17,12 @@ public class GameModels : MonoBehaviour
         
     }
 
-    public void PlayGame()
+    public void EasyMode()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(3);
     }
 
-    public void PlayGamekho()
+    public void HardMode()
     {
         SceneManager.LoadSceneAsync(4);
     }
