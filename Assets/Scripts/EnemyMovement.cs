@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,14 +6,10 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField]
     float xSpeed;
-    [SerializeField]
-    float ySpeed;
     float startPosition;
     float endPosition;
     float Screenwidth;
-    float ScreenHeight;
-    int xDirection = 1;
-    int yDirection = 1;
+    int direction = 1;
 
     void Start()
     {
@@ -21,7 +17,6 @@ public class EnemyMovement : MonoBehaviour
         startPosition = -halfScreenWidth;
         endPosition = halfScreenWidth;
         Screenwidth = halfScreenWidth;
-        ScreenHeight = Camera.main.orthographicSize;
     }
 
     void Update()
@@ -32,54 +27,37 @@ public class EnemyMovement : MonoBehaviour
 
     void MoveCharacter()
     {
-        float newPositionX = transform.position.x + xDirection * xSpeed * Time.deltaTime;
+        float newPositionX = transform.position.x - direction * xSpeed * Time.deltaTime; // Đảo ngược hướng di chuyển
+
         transform.position = new Vector2(newPositionX, transform.position.y);
     }
+
 
     void CheckScreenBounds()
     {
         if (transform.position.x > endPosition || transform.position.x < startPosition)
         {
-            xDirection *= -1;
+            direction *= -1;
             FlipCharacter();
         }
-
-        if (transform.position.y > ScreenHeight || transform.position.y < -ScreenHeight)
-        {
-            yDirection *= -1;
-        }
+        
     }
 
     public void SetXDirection(int x)
     {
-        xDirection = x;
+        direction = x;
         FlipCharacter();
-    }
-
-    public void SetYDirection(int y)
-    {
-        yDirection = y;
     }
 
     void FlipCharacter()
     {
-        transform.localScale = new Vector3(xDirection, 1, 1);
+        transform.localScale = new Vector3(direction, 1, 1);
     }
+
 
     public void SetXSpeed(float x)
     {
         xSpeed = x;
-    }
-
-    public void SetYSpeed(float y)
-    {
-        ySpeed = y;
-    }
-
-    public void SetSpeed(float x, float y)
-    {
-        xSpeed = x;
-        ySpeed = y;
     }
 
 }

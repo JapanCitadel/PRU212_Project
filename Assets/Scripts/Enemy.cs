@@ -1,13 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField]
-    GameObject prefabs;
+    GameObject prefab;
     float time;
     float xScreenWidth;
     float yScreenHeight;
+    int poolsize = 4;
     List<GameObject> enemies;
     EnemyMovement script;
 
@@ -16,6 +18,12 @@ public class Enemy : MonoBehaviour
         xScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
         yScreenHeight = Camera.main.orthographicSize;
         enemies = new List<GameObject>();
+        for (int i = 0; i < poolsize; i++)
+        {
+            GameObject enemy = Instantiate(prefab);
+            enemy.SetActive(false);
+            enemies.Add(enemy);
+        }
     }
 
     void Update()
@@ -24,34 +32,56 @@ public class Enemy : MonoBehaviour
 
         if (time >= 3)
         {
-            time -= 3;
+            GameObject enemy = GetFresEnemy();
 
-            GameObject enemy = Instantiate(prefabs);
-            enemy.SetActive(true);
-            enemies.Add(enemy);
 
-            float yPosition = Random.Range(-yScreenHeight, yScreenHeight); // Random yPosition trong khoảng từ -yScreenHeight đến yScreenHeight (toàn bộ chiều cao của màn hình)
-            enemy.transform.position = new Vector2(
-                Random.Range(-xScreenWidth, xScreenWidth), yPosition);
+            float[] xPositions = { -xScreenWidth , xScreenWidth  };
+
+            float randomXPosition = xPositions[Random.Range(0, 2)];
+
+            float yPosition = Random.Range(-yScreenHeight , yScreenHeight );
+
+            enemy.transform.position = new Vector2(randomXPosition, yPosition);
 
             script = enemy.GetComponent<EnemyMovement>();
             if (script != null)
             {
-                float xSpeed = Random.Range(1, 10);
-                float ySpeed = Random.Range(1, 10);
-
                 if (Random.Range(1, 100) < 50)
                     script.SetXDirection(1);
                 else
                     script.SetXDirection(-1);
 
-                if (Random.Range(1, 100) < 50)
-                    script.SetYDirection(1);
-                else
-                    script.SetYDirection(-1);
-
-                script.SetSpeed(xSpeed, ySpeed);
+                script.SetXSpeed(Random.Range(1, 10));
+                time = 0;
             }
         }
+
+        // Kiểm tra vị trí của từng quái vật và deactive chúng nếu chúng ra khỏi màn hình
+        foreach (GameObject enemy in enemies)
+        {
+            if (enemy.activeSelf && IsOutOfScreen(enemy.transform.position))
+            {
+                enemy.SetActive(false);
+            }
+        }
+    }
+
+    GameObject GetFresEnemy()
+    {
+        foreach (GameObject enemy in enemies)
+        {
+            if (!enemy.activeSelf)
+            {
+                enemy.SetActive(true);
+                return enemy;
+            }
+        }
+        return null;
+    }
+
+    bool IsOutOfScreen(Vector3 position)
+    {
+        // Kiểm tra xem vị trí có nằm ngoài màn hình không
+        return position.x < -xScreenWidth || position.x > xScreenWidth || position.y < -yScreenHeight || position.y > yScreenHeight;
     }
 }
