@@ -14,11 +14,13 @@ public class Enemy : MonoBehaviour
     EnemyMovement script;
     [SerializeField]
     int poolSize;
+    [SerializeField]
+    GameObject Limit;
 
     void Start()
     {
-        ScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
-        ScreenHeight = Camera.main.orthographicSize;
+        ScreenWidth = Camera.main.orthographicSize * 2 * Camera.main.aspect;
+        ScreenHeight = Camera.main.orthographicSize * 2;
         enemies = new List<GameObject>();
         if (gameObject.tag == "Enemy")
         {
@@ -72,14 +74,23 @@ public class Enemy : MonoBehaviour
             GameObject enemy = GetFreeEnemy();
             if (enemy != null)
             {
-                Vector2 enemyPosition = new Vector2(Random.Range(0, 2) == 0 ? ScreenWidth : -ScreenWidth, Random.Range(-ScreenHeight, ScreenHeight));
+                xPosition = Random.Range(0, 2) == 0 ? (ScreenWidth + 10) : -(ScreenWidth+10);
+                yPosition = Random.Range(-ScreenHeight, ScreenHeight);
+                Vector2 enemyPosition = new Vector2(xPosition, yPosition);
                 enemy.transform.position = enemyPosition;
 
                 EnemyMovement script = enemy.GetComponent<EnemyMovement>();
                 if (script != null)
                 {
-                    script.SetXDirection(Random.Range(0, 2) == 0 ? -1 : 1); // Set random direction
-                    script.SetXSpeed(Random.Range(1, 5)); // Set random speed
+                    if (xPosition > 0)
+                    {
+                        script.SetXDirection(-1);
+                    }
+                    else
+                    {
+                        script.SetXDirection(1);
+                    }
+                    script.SetXSpeed(Random.Range(3, 8));
                 }
             }
             time = 0;

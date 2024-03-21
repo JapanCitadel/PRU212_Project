@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class BoomController : MonoBehaviour
 {
-    public float fallSpeed = 3f; 
-    public float destroyHeight = -5f;
+    public float fallSpeed; 
+    float ScreenHeight;
     Animator animator;
 
     void Start()
     {
+        ScreenHeight = Camera.main.orthographicSize * 2 + 10;
         animator = GetComponent<Animator>();
     }
 
@@ -17,7 +18,7 @@ public class BoomController : MonoBehaviour
     {
         transform.Translate(Vector2.down * fallSpeed * Time.deltaTime);
 
-        if (transform.position.y < destroyHeight)
+        if (transform.position.y < -ScreenHeight)
         {
             DestroyBoom();
         }
@@ -26,13 +27,19 @@ public class BoomController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            animator.SetTrigger("Explode");
             DestroyBoom();
         }
     }
 
     public void DestroyBoom()
     {
+        animator.SetTrigger("Explode");
+        Debug.Log("phat no");
         gameObject.SetActive(false);
+    }
+
+    public void SetFallSpeed(float x)
+    {
+        fallSpeed = x;
     }
 }

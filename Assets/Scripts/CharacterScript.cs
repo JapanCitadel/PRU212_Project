@@ -16,6 +16,7 @@ public class CharacterScript : MonoBehaviour
     float NowDistance, PrevDistance;
     public float size;
     public int eatenFish = 0;
+    public int checkPoint = 20;
 
     // Start is called before the first frame update
     void Start()
@@ -75,13 +76,13 @@ public class CharacterScript : MonoBehaviour
         Collider2D[] eatItems = Physics2D.OverlapCircleAll(EatPoint.position, EatRange, ItemLayer);
         foreach (Collider2D enemy in eatEnemies)
         {
+            animator.SetTrigger("IsEat");
             if (size > enemy.GetComponent<EnemyMovement>().size)
             {
                 uiController.EnemyIncreasement(enemy.tag);
                 enemy.gameObject.SetActive(false);
-                animator.SetTrigger("IsEat");
                 eatenFish++;
-                if (eatenFish == 10)
+                if (eatenFish == checkPoint)
                 {
                     GrowUp();
                 }
@@ -121,7 +122,14 @@ public class CharacterScript : MonoBehaviour
 
     public void GrowUp()
     {
-        size++;
+        if (size >= 4.5)
+        {
+            return;
+        }
+        else
+        {
+            size++;
+        }
         transform.localScale = new Vector3(size, size, 1f);
         eatenFish = 0;
         EatRange += 0.5f;

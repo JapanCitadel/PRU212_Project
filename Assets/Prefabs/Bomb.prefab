@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2694829036507407273}
   - component: {fileID: 330997584664403170}
   - component: {fileID: 2712826794976242030}
-  - component: {fileID: 8111250132362553849}
   - component: {fileID: 3300225647220571763}
   - component: {fileID: 4678525573915661206}
+  - component: {fileID: 481104153840135143}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Bomb
@@ -133,20 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.66, y: 0.65}
   m_EdgeRadius: 0
---- !u!114 &8111250132362553849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3554965726528649171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ea5d3f500fd6d141b2737da5c47d76c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boomPrefab: {fileID: 3554965726528649171}
-  spawnInterval: 7
 --- !u!50 &3300225647220571763
 Rigidbody2D:
   serializedVersion: 4
@@ -195,3 +181,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &481104153840135143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3554965726528649171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8dc1972eddda6449e0cede036d095e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 0

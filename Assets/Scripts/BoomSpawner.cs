@@ -2,32 +2,69 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D;
+using UnityEngine.UIElements;
 
 public class BoomSpawner : MonoBehaviour
 {
-    public GameObject boomPrefab;
-    public float spawnInterval = 7f; 
-    private float timer = 0f;
+    public GameObject bombPrefab;
+    public float spawnTime; 
+    float time = 0f;
+    float ScreenWidth, ScreenHeight;
+    float xPosition, yPosition;
+    [SerializeField]
+    int poolSize;
+    List<GameObject> Bombs;
 
+    void Start()
+    {
+        ScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
+        ScreenHeight = Camera.main.orthographicSize * 2 + 10;
+        Bombs = new List<GameObject>();
+        for (int i = 0; i < poolSize; i++)
+        {
+            GameObject bomb = Instantiate(bombPrefab);
+            bomb.SetActive(false);
+            Bombs.Add(bomb);
+        }
+    }
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer >= spawnInterval)
-        {
-            SpawnBoom();
-            timer = 0f; 
-        }
+        SpawnBoom();
     }
 
     void SpawnBoom()
     {
-        float randomX = Random.Range(-8f, 8f); 
-        Vector2 spawnPosition = new Vector2(randomX, 6f); 
+        time += Time.deltaTime;
+        if (time >= spawnTime)
+        {
+            GameObject bomb = GetFreeBomb();
+            if (bomb != null)
+            {
+                xPosition = Random.Range(0, 2) == 0 ? ScreenWidth : -ScreenWidth;
+                yPosition = ScreenHeight;
+                Vector2 bombPosition = new Vector2(xPosition, yPosition);
+                bomb.transform.position = bombPosition;
 
-        GameObject newBoom = Instantiate(boomPrefab, spawnPosition, Quaternion.identity);
-        newBoom.AddComponent<BoomController>(); 
+                BoomController script = bomb.GetComponent<BoomController>();
+                if (script != null)
+                {
+                    script.SetFallSpeed(Random.Range(3, 6));
+                }
+            }
+            time = 0;
+        }
     }
 
-    
+    GameObject GetFreeBomb()
+    {
+        foreach (GameObject bomb in Bombs)
+        {
+            if (bomb.activeSelf == false)
+            {
+                bomb.SetActive(true);
+                return bomb;
+            }
+        }
+        return null;
+    }
 }
