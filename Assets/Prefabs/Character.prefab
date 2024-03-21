@@ -142,6 +142,7 @@ MonoBehaviour:
     m_Bits: 0
   size: 0
   eatenFish: 0
+  checkPoint: 20
 --- !u!50 &622381425000426945
 Rigidbody2D:
   serializedVersion: 4
