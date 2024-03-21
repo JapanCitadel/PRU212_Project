@@ -21,4 +21,9 @@ public class MainScript : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(2);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
