@@ -26,10 +26,10 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        ScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
-        startPosition = -ScreenWidth - 10;
-        endPosition = ScreenWidth + 10; ;
-        ScreenHeight = Camera.main.orthographicSize;
+        ScreenWidth = Camera.main.orthographicSize * 2 * Camera.main.aspect;
+        startPosition = -ScreenWidth - 50;
+        endPosition = ScreenWidth + 50; ;
+        ScreenHeight = Camera.main.orthographicSize *2;
         sprite = GetComponent<SpriteRenderer>();
         size = transform.localScale.y;
         audioManager = FindObjectOfType<AudioManager>();

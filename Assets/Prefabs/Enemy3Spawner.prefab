@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6053675289787553267, guid: a4026662895e9544bb68ac17ddb32cf5, type: 3}
   poolSize: 10
+  Limit: {fileID: 5341638802225859111, guid: 163cc29f25b43a649917ae0e51e02880, type: 3}
