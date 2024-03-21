@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: e37ab8a6448b0784b86f55f6c59dfae6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 296
+        width: 192
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e572926d79324334688db78176a5be33
+      internalID: 1473436600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 295
+        width: 194
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1514def16595f3a4583cf81f32b3f6e5
+      internalID: -826669087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_2
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 295
+        width: 193
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d08c36e7a3bfa43ae555ab500448ad
+      internalID: 1198376358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_3
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 295
+        width: 198
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f9c40266924964c921734f17ae6055
+      internalID: -1132597615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_4
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 295
+        width: 196
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dac5d81291da845a5226d1d77df54e
+      internalID: 2111901536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_5
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 295
+        width: 194
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2d49c62705b9f4192db449963f6801
+      internalID: 1883640756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 154
+        width: 177
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12811adc5e6cad4ebc9d0125401c0fa
+      internalID: 44065302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_10
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 154
+        width: 175
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9f9c143582176458e42a8d18ba46c7
+      internalID: 1001993294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_11
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 154
+        width: 187
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cb10ed7ca4f83408dd549d9a1b061f
+      internalID: 1671422537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_12
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 154
+        width: 189
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac181a8a9672444fb47ee71af279dd4
+      internalID: 1227558443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_13
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 152
+        width: 196
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37a68cf3a7a0a14c853e58e76c01106
+      internalID: -1738985020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_14
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 150
+        width: 196
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b1ebe41ab496444b7d5b15f299a374
+      internalID: -387289053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_15
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 150
+        width: 196
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecca9a7b6399a14e9e036ce7b6e69a2
+      internalID: 1968436286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_16
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 150
+        width: 195
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d252d16dc06f7a745a8b59dd4154f8bf
+      internalID: 1257118144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_17
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 149
+        width: 192
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c482cbccbee3d42acbceb1d45f1045
+      internalID: 911038486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_18
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 151
+        width: 190
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4319e0b91733e0341a22477edecb99cd
+      internalID: 31523549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_19
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 152
+        width: 189
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c101017547da0b241ab2ab8e683311f8
+      internalID: 120669891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_20
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 152
+        width: 191
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42dc8168b58207b4d8528fe81afb655c
+      internalID: -1039472809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_21
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 152
+        width: 187
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d094772801a1cc545804b718703bc110
+      internalID: -1151242905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_22
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 152
+        width: 173
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d637315de7df94e44b671858c3ece3c0
+      internalID: 1178849935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_23
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 4
+        width: 195
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c709d31ac1720c4ab28eeb317b1bf8c
+      internalID: -107515491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_24
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 5
+        width: 194
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3cfda302dee5c44afa45faa43bdecc
+      internalID: 583942708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_25
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 5
+        width: 187
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d743469e3230241bd1029012551b12
+      internalID: 836300049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_26
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 5
+        width: 192
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f25698d0221b6b40a6c807ce650240c
+      internalID: -1538990217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Feeding Frenzy - Parrotfish_27
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 5
+        width: 193
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6616dbe5f396f7243986bf6fe31a4f1e
+      internalID: 1414867528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Feeding Frenzy - Parrotfish_0: 1473436600
+      PC Computer - Feeding Frenzy - Parrotfish_1: -826669087
+      PC Computer - Feeding Frenzy - Parrotfish_10: 1001993294
+      PC Computer - Feeding Frenzy - Parrotfish_11: 1671422537
+      PC Computer - Feeding Frenzy - Parrotfish_12: 1227558443
+      PC Computer - Feeding Frenzy - Parrotfish_13: -1738985020
+      PC Computer - Feeding Frenzy - Parrotfish_14: -387289053
+      PC Computer - Feeding Frenzy - Parrotfish_15: 1968436286
+      PC Computer - Feeding Frenzy - Parrotfish_16: 1257118144
+      PC Computer - Feeding Frenzy - Parrotfish_17: 911038486
+      PC Computer - Feeding Frenzy - Parrotfish_18: 31523549
+      PC Computer - Feeding Frenzy - Parrotfish_19: 120669891
+      PC Computer - Feeding Frenzy - Parrotfish_2: 1198376358
+      PC Computer - Feeding Frenzy - Parrotfish_20: -1039472809
+      PC Computer - Feeding Frenzy - Parrotfish_21: -1151242905
+      PC Computer - Feeding Frenzy - Parrotfish_22: 1178849935
+      PC Computer - Feeding Frenzy - Parrotfish_23: -107515491
+      PC Computer - Feeding Frenzy - Parrotfish_24: 583942708
+      PC Computer - Feeding Frenzy - Parrotfish_25: 836300049
+      PC Computer - Feeding Frenzy - Parrotfish_26: -1538990217
+      PC Computer - Feeding Frenzy - Parrotfish_27: 1414867528
+      PC Computer - Feeding Frenzy - Parrotfish_28: -712620135
+      PC Computer - Feeding Frenzy - Parrotfish_29: -2125478570
+      PC Computer - Feeding Frenzy - Parrotfish_3: -1132597615
+      PC Computer - Feeding Frenzy - Parrotfish_30: -251895749
+      PC Computer - Feeding Frenzy - Parrotfish_31: -2080870055
+      PC Computer - Feeding Frenzy - Parrotfish_32: 672510128
+      PC Computer - Feeding Frenzy - Parrotfish_33: -355652008
+      PC Computer - Feeding Frenzy - Parrotfish_34: -1517606380
+      PC Computer - Feeding Frenzy - Parrotfish_35: -1478879733
+      PC Computer - Feeding Frenzy - Parrotfish_36: 231529860
+      PC Computer - Feeding Frenzy - Parrotfish_4: 2111901536
+      PC Computer - Feeding Frenzy - Parrotfish_5: 1883640756
+      PC Computer - Feeding Frenzy - Parrotfish_6: -820204079
+      PC Computer - Feeding Frenzy - Parrotfish_7: 2000715032
+      PC Computer - Feeding Frenzy - Parrotfish_8: -367493021
+      PC Computer - Feeding Frenzy - Parrotfish_9: 44065302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
