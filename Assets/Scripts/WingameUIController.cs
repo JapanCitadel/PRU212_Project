@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WingameUIController : MonoBehaviour
@@ -19,5 +20,15 @@ public class WingameUIController : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene(2);
     }
 }

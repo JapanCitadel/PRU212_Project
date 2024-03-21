@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,21 +11,20 @@ public class EnemyMovement : MonoBehaviour
     float ySpeed;
     float startPosition;
     float endPosition;
-    float Screenwidth;
+    float ScreenWidth;
     float ScreenHeight;
-    int xDirection = 1;
-    int yDirection = 1;
+    float xDirection = 1;
+    SpriteRenderer sprite;
+    public float size;
 
     void Start()
     {
-        float halfScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
-        startPosition = -halfScreenWidth -2;
-        endPosition = halfScreenWidth +2;
-        Screenwidth = halfScreenWidth;
+        ScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
+        startPosition = -ScreenWidth - 10;
+        endPosition = ScreenWidth + 10; ;
         ScreenHeight = Camera.main.orthographicSize;
-
-        // Set initial direction
-        FlipCharacter();
+        sprite = GetComponent<SpriteRenderer>();
+        size = transform.localScale.y;
     }
 
     void Update()
@@ -37,35 +37,32 @@ public class EnemyMovement : MonoBehaviour
     {
         float newPositionX = transform.position.x + xDirection * xSpeed * Time.deltaTime;
         transform.position = new Vector2(newPositionX, transform.position.y);
+        if (xDirection == -1)
+        {
+            sprite.flipX = false;
+        }
+        else
+        {
+            sprite.flipX = true;
+        }
     }
 
     void CheckScreenBounds()
     {
         if (transform.position.x > endPosition || transform.position.x < startPosition)
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
 
         if (transform.position.y > ScreenHeight || transform.position.y < -ScreenHeight)
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 
-    public void SetXDirection(int x)
+    public void SetXDirection(float x)
     {
         xDirection = x;
-        FlipCharacter();
-    }
-
-    public void SetYDirection(int y)
-    {
-        yDirection = y;
-    }
-
-    void FlipCharacter()
-    {
-        transform.localScale = new Vector3(xDirection, 1, 1);
     }
 
     public void SetXSpeed(float x)
@@ -73,14 +70,26 @@ public class EnemyMovement : MonoBehaviour
         xSpeed = x;
     }
 
-    public void SetYSpeed(float y)
+    void Eat()
     {
-        ySpeed = y;
+        UIControllerScript uiController = GameObject.FindObjectOfType<UIControllerScript>();
+        if (size > GameObject.FindObjectOfType<CharacterScript>().size)
+        {
+            GameObject.FindObjectOfType<CharacterScript>().gameObject.SetActive(false);
+            if (uiController != null)
+            {
+                PlayerPrefs.SetInt("EnemyCount", uiController.EnemyCount);
+                PlayerPrefs.SetInt("Score", uiController.Score);
+            }
+            SceneManager.LoadScene(5);
+        }
     }
 
-    public void SetSpeed(float x, float y)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        xSpeed = x;
-        ySpeed = y;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Eat();
+        }
     }
 }

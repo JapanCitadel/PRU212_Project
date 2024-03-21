@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184, y: -163}
+  m_AnchoredPosition: {x: 184, y: -303}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156237770
@@ -674,8 +674,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.5063, y: 43.9872}
-  m_SizeDelta: {x: 160.0004, y: 31.3818}
+  m_AnchoredPosition: {x: 0.5063, y: 2}
+  m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313384298
 MonoBehaviour:
@@ -723,7 +723,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1383697104}
         m_TargetAssemblyTypeName: GameModels, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: EasyMode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1297,8 +1297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.3533, y: -66}
-  m_SizeDelta: {x: 156.74, y: 30}
+  m_AnchoredPosition: {x: 1.3533, y: -132}
+  m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943718526
 MonoBehaviour:
@@ -1346,7 +1346,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1383697104}
         m_TargetAssemblyTypeName: GameModels, Assembly-CSharp
-        m_MethodName: PlayGamekho
+        m_MethodName: HardMode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

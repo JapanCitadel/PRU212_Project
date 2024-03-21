@@ -17,6 +17,7 @@ public class UIControllerScript : MonoBehaviour
     public int Score = 0;
     public static bool isPause = false;
     public GameObject PauseMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,11 +74,40 @@ public class UIControllerScript : MonoBehaviour
 
     public void LoadMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
     {
+        Application.Quit();
+    }
 
+    public void EnemyIncreasement(string EnemyTag)
+    {
+        EnemyCount += 1;
+        txtEnemyCount.text = EnemyCount.ToString();
+        int points = 0;
+        switch (EnemyTag)
+        {
+            case "Enemy":
+                points = 10;
+                break;
+            case "Enemy2":
+                points = 20;
+                break;
+            case "Enemy3":
+                points = 40;
+                break;
+            case "Enemy4":
+                points = 80;
+                break;
+            default:
+                points = 0;
+                break;
+        }
+
+        Score += points;
+        txtScore.text = Score.ToString();
     }
 }
