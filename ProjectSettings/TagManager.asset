@@ -10,6 +10,7 @@ TagManager:
   - Enemy2
   - Enemy3
   - Enemy4
+  - audio
   layers:
   - Default
   - TransparentFX

@@ -17,6 +17,13 @@ public class EnemyMovement : MonoBehaviour
     SpriteRenderer sprite;
     public float size;
 
+    private AudioManager audioManager;
+
+    private void Awake()
+    {
+        //audioManager=GameObject.FindGameObjectWithTag("audio").GetComponent<AudioManager>();
+    }
+
     void Start()
     {
         ScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
@@ -25,12 +32,14 @@ public class EnemyMovement : MonoBehaviour
         ScreenHeight = Camera.main.orthographicSize;
         sprite = GetComponent<SpriteRenderer>();
         size = transform.localScale.y;
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     void Update()
     {
         MoveCharacter();
         CheckScreenBounds();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     void MoveCharacter()
@@ -90,6 +99,8 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Eat();
+            audioManager.PlaySFX(audioManager.ancaClip);
+            //Destroy(gameObject);
         }
     }
 }
